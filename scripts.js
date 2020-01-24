@@ -1,4 +1,4 @@
-/* [QUIZ ENGINE] */
+//Krystyna Poremba 20719178
 
 var attempt = 1;
 var questions = [
@@ -16,9 +16,9 @@ var questions = [
     q : "What is the oldest model of storage?",
     o : [
       " HDD",
-      " RAM",
+      " SRAM",
       " SSD",
-	  " ROM",
+	  " DRAM",
     ],
     a : 0
   }, 
@@ -55,51 +55,40 @@ var questions = [
 ];
 
 function draw () {
-  // quiz.draw() : draw the quiz
 var img = document.createElement("img");
-
 img.src = "images/quiz.jpg";
 var src = document.getElementById("x");
 
-
-    // Fetch the HTML quiz wrapper
     var wrapper = document.getElementById("quiz-wrap");
 	wrapper.appendChild(img);
 
-    // Loop through all the questions
-    // Create all the necessary HTML elements
     for (var index in questions) {
       var number = parseInt(index) + 1; // The current question number
       var qwrap = document.createElement("div"); // A div wrapper to hold this question and options
-      qwrap.classList.add("question"); // CSS class, for cosmetics
+      qwrap.classList.add("question");
 
-      // The question - <h1> header
+      // The question
       var question = document.createElement("h1");
       question.innerHTML = number + ") " + questions[index]['q'];
       qwrap.appendChild(question);
 
-      // The options - <input> radio buttons and <label>
+      // The options 
       for (var oindex in questions[index]['o']) {
-        // The <label> tag
         var label = document.createElement("label");
         qwrap.appendChild(label);
 
-        // The <option> tag
         var option = document.createElement("input");
         option.type = "radio";
         option.value = oindex;
         option.required = true;
-        option.classList.add("oquiz"); // Will explain this later in function submit below
+        option.classList.add("oquiz"); 
 
-        // Remember that a radio button group must share the same name
         option.name = "quiz-" + number;
         label.appendChild(option);
 
-        // Add the option text
         var otext = document.createTextNode(questions[index]['o'][oindex]);
         label.appendChild(otext);
       }
-      // Finally, add this question to the main HTML quiz wrapper
       wrapper.appendChild(qwrap);
     }
 
@@ -111,14 +100,11 @@ var src = document.getElementById("x");
   }
 
 function submit (evt) {
-  // quiz.submit() : Handle the calculations when the user submits to quiz
-
     // Stop the form from submitting
     evt.preventDefault();
     evt.stopPropagation();
 
-    // Remember that we added an "oquiz" class to all the options?
-    // We can easily get all the selected options this way
+    // get all the selected options
     var selected = document.querySelectorAll(".oquiz:checked");
 	var qnum = document.querySelectorAll(".question");
 
@@ -133,13 +119,11 @@ function submit (evt) {
 		  qnum[index].style.backgroundColor = "#ee2e2c";
 	  }
     }
-
-    // We can calculate the score now
+	
     var total = selected.length;
     var percent = score / total ;
 
     // Update and show the score
-    // Instead of creating elements, we can also directly alter the inner HTML
     var html = "<h1>";
     if (percent>=0.7) {
       html += "WELL DONE!";
@@ -154,5 +138,4 @@ function submit (evt) {
 	attempt++;
   }
 
-/* [INIT] */
 window.addEventListener("load", draw);

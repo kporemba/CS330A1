@@ -1,5 +1,4 @@
 .HDD{
-/*	background-color: aquamarine;*/
 	display: inline-block;
     width: 47%;
     float: left;
@@ -9,7 +8,6 @@
 }
 
 .SSD{
-/*	background-color: aqua;*/
 	border-width: thin;
 	border-color: black;
 	display: inline-block;
@@ -118,15 +116,6 @@ td {
     padding: 20px;
 }
 
-/*
-.final {
-	background-color: #F7D129;
-	border: 5px solid black;
-	color: black;
-	margin-top: 20px;
-}
-*/
-
 .bbox {
 	display: block;
 	margin-left: auto;
@@ -145,7 +134,10 @@ td {
 	margin-left: auto;
 	margin-right: auto;
 	font-size: 19px;
-	margin-top: 20px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 img {
@@ -266,5 +258,5 @@ img {
 	#quiz-wrap h1 {
   		font-size: 22px;
   		margin: 5px 0;
-}
+	}
 }
