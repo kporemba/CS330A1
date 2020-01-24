@@ -1,0 +1,270 @@
+.HDD{
+/*	background-color: aquamarine;*/
+	display: inline-block;
+    width: 47%;
+    float: left;
+    padding: 2%;
+	border-width: thin;
+	border-color: black;
+}
+
+.SSD{
+/*	background-color: aqua;*/
+	border-width: thin;
+	border-color: black;
+	display: inline-block;
+    width: 45%;
+	padding: 2%;
+    float: right;
+}
+.final {
+	width: 50%;
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.button {
+	background-color: #F7D129;
+	padding: 10px;
+	margin: 25px;
+	border-radius: 10px;
+	color: black;
+	white-space: nowrap;
+	text-decoration: unset;
+	border: 2px solid black;
+}
+
+.pic1 {
+	width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.gif {
+	height: 300px;
+	width: 100%;
+}
+
+.heading{
+	text-align: center;
+}
+
+.title {
+	color: white;
+    font-family: 'Roboto', sans-serif;
+	padding-top: 20px;
+	padding-bottom: 20px;	
+	text-decoration-line: none;
+	text-align: center;
+}
+
+.box {
+	background-color: #F7D129;
+	margin: -8px; 
+	margin-top: -21px; 
+	padding-top: 10px;
+}
+
+h2 {
+	color: #F7D129;
+    font-family: 'Roboto', sans-serif;
+	text-align: center;
+}
+
+h3 {
+	color: #F7D129;
+    font-family: 'Roboto', sans-serif;
+	text-align: center;
+	background-color: black;
+}
+
+p {
+	font-family: 'Libre Baskerville', serif;
+    font-size: .9em;
+    padding-bottom: 10px;	
+}
+
+.bottom {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    text-align: center;
+    padding: 8px;
+}
+tr:nth-child(even){background-color: #f2f2f2}
+th {
+    background-color: #F7D129;
+    color: black;
+}
+td {
+	text-align: left;
+}
+#head{
+	background-color: #F7D129;
+    color: black;
+	text-align: center;
+}
+#body {
+    padding: 20px;
+}
+
+/*
+.final {
+	background-color: #F7D129;
+	border: 5px solid black;
+	color: black;
+	margin-top: 20px;
+}
+*/
+
+.bbox {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*quiz*/
+/* The entire quiz form */
+.return {
+	color: #F7D129;
+    font-family: 'Roboto', sans-serif;
+	text-align: center;
+	background-color: black;
+	text-decoration-line: none;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 19px;
+	margin-top: 20px;
+}
+
+img {
+	align-content: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#quiz{ 
+	margin-left: auto;
+	margin-right: auto;
+	display: table;
+}
+
+#quiz-wrap {
+  font-family: arial, sans-serif;
+}
+
+/* Wrapper of each question */
+#quiz-wrap .question {
+  padding: 15px;
+  margin: 10px;
+  background: #f2f2f2;
+  border: 3px solid #ccc;
+  border-radius: 10px;
+}
+
+/* Question */
+#quiz-wrap h1 {
+  font-size: 22px;
+  margin: 5px 0;
+}
+
+/* Options */
+#quiz-wrap label {
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  margin-top: 10px;
+  color: black;
+}
+
+/* Submit Button */
+#quiz-wrap input[type=submit] {
+  	background: #F7D129;
+	color: black;
+	border: 2px solid black;
+	padding: 10px 20px;
+	font-size: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	display: table;
+}
+#quiz-wrap input[type=submit]:hover {
+	background-color: black;
+	color: white;
+	border: 2px solid white;
+}
+
+.special-title{
+	float:left;
+	width: 100%
+}
+
+/* Responsive Web Design */
+@media (max-width: 600px) {
+     .big-container {
+         display: none;
+     }
+ }
+@media (min-width: 600px) {
+     .small-container {
+         display: none;
+     }
+ }
+
+@media screen and (max-width: 600px) {
+    .HDD {
+        display: block;
+        width: 90%;
+        float: left;
+        font-size: 1em;
+    }
+    .SSD {
+        display: block;
+        width: 90%;
+        float: left;
+        font-size: 1em;
+    }
+    h2 {
+        color: #F7D129;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.2em;
+    }
+    p {
+        font-family: 'Libre Baskerville', serif;
+        padding-bottom: 10px;
+        font-size: 1em;
+    }
+	
+	.pic1 {
+		width: 60%;
+	}
+	table {
+    	border-collapse: collapse;
+    	width: 100%;
+	}
+	.button {
+		background-color: #F7D129;
+		padding: 7px;
+		margin: 25px;
+		border-radius: 10px;
+		color: black;
+		text-decoration: unset;
+	}
+
+	#quiz-wrap h1 {
+  		font-size: 22px;
+  		margin: 5px 0;
+}
+}
