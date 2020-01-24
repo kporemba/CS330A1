@@ -85,6 +85,8 @@ p {
     padding-bottom: 10px;	
 }
 
+a{text-decoration: unset;}
+
 .bottom {
 	display: block;
 	margin-left: auto;
